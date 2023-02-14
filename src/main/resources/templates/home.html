@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalles Spring Boot</title>
+    <style>
+        .Mail1 {color: red;
+            background-color: yellow;
+            width: 200px;
+            font-size: 20px;}
+    </style>
+</head>
+<body>
+<h1>Hello !</h1>
+<p>Welcome to <span th:text="${appName}">Our App</span></p>
+<h2>Absender</h2>
+<div th:text="${mailVon}" class="Mail1"></div>
+</body>
+</html>
