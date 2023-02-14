@@ -18,6 +18,9 @@ public class SecurityConfig {
                 .and()
                 .csrf()
                 .disable();
+        //https://stackoverflow.com/questions/53395200/h2-console-is-not-showing-in-browser
+        http.csrf().disable();
+        http.headers().frameOptions().disable();
         return http.build();
     }
 }
